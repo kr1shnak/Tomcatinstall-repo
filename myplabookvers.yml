@@ -1,13 +1,13 @@
 ---
-hosts: 172.31.0.181
-become: yes
-var:
-  mv1: git
-  mv2: tree
-  mv3: wget
+- hosts: 172.31.0.181
+  become: yes
+  var:
+    mv1: git
+    mv2: tree
+    mv3: wget
 
-tasks: 
+  tasks: 
 
-- name: i want to display mv2 
-  debug: 
-    msg: "{{mv2}}"
+  - name: i want to display mv2 
+    debug: 
+      msg: "{{mv2}}"
