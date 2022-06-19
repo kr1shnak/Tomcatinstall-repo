@@ -1,7 +1,7 @@
 ---
 - hosts: 172.31.0.181
   become: yes
-  var:
+  vars:
     mv1: git
     mv2: tree
     mv3: wget
