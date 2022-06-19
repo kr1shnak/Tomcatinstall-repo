@@ -1,0 +1,6 @@
+---
+myvar: value
+wpu: apache2
+wpr: httpd
+jpu: openjdk-8-jre
+jpr: java-1.8.0-openjdk

@@ -5,25 +5,25 @@
 
   - name: i want to install apache2 on ubuntu nodes
     apt:
-      name: apache2
+      name: "{{wpu}}"
       state: present
     when: ansible_os_family =="Debian"
   
   - name: i want to start apache2 on ubuntu nodes
     service: 
-      name: apache2
+      name: "{{wpu}}"
       state: started
     when: ansible_os_family =="Debian"
 
   - name: i want to install apache2 on redhat nodes
     yum: 
-      name: httpd
+      name: "{{wpr}}"
       state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to start apache2 on redhat nodes
     service: 
-      name: httpd
+      name: "{{wpr}}"
       state: started
     when: ansible_os_family =="RedHat"
   
