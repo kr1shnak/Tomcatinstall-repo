@@ -26,4 +26,17 @@
       name: "{{wpr}}"
       state: started
     when: ansible_os_family =="RedHat"
+
+  - name: i want to install java pack on ubuntu nodes
+    apt:
+      name: "{{jpu}}"
+      state: present
+    when: ansible_os_family =="Debian"
+
+  - name: i want to install java on redhat
+    yum:
+      name: "{{jpr}}"
+      state: present
+    when: ansible_os_family =="RedHat"
+  
   
