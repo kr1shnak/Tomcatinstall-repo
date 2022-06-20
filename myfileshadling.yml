@@ -8,3 +8,9 @@
     apt: 
       name: apache2
       state: present
+
+  - name: copying static file into the servere side
+    templet: 
+      src: mystaticfile.html
+      dest: /var/www/html/index.html
+      
