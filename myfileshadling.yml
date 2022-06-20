@@ -10,6 +10,6 @@
       state: present
 
   - name: copying static file into the servere side
-    templat: 
+    template: 
       src: mystaticfile.html
       dest: /var/www/html/index.html
