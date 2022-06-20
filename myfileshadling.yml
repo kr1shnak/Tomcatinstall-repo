@@ -10,7 +10,6 @@
       state: present
 
   - name: copying static file into the servere side
-    templet: 
+    templat: 
       src: mystaticfile.html
       dest: /var/www/html/index.html
-      
