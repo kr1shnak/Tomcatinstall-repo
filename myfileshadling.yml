@@ -8,6 +8,7 @@
     apt: 
       name: apache2
       state: present
+    notify: restartwebservere
 
   - name: copying static file into the servere side
     template: 
