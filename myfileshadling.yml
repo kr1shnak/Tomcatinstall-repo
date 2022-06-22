@@ -13,3 +13,9 @@
     template: 
       src: mystaticfile.html
       dest: /var/www/html/index.html
+
+  - name: copying a dynamic file into the servere
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+    
