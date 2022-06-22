@@ -35,6 +35,6 @@
 
   - name: restartwebservere
     service: 
-      name: ansible2
+      name: apache2
       state: restarted
 
