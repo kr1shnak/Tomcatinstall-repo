@@ -13,6 +13,7 @@
     template: 
       src: mystaticfile.html
       dest: /var/www/html/index.html
+    notify: restartwebservere
 
   - name: copying a dynamic file into the servere
     template:
@@ -29,4 +30,11 @@
     file:
       path: /home/ubuntu/myfolder22
       state: directory
-      
+
+  handlers:
+
+  - name: restartwebservere
+    service: 
+      name: ansible2
+      state: restarted
+
