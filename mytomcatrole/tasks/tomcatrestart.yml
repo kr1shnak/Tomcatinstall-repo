@@ -1,0 +1,5 @@
+---
+- name: restrt tomcat 
+  systemd: 
+    state: restrted
+    name: tomcat
