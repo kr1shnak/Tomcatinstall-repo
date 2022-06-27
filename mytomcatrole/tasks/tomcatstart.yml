@@ -1,5 +1,4 @@
 ---
-
 - name: tomcat start
   systemd:
     state: started
