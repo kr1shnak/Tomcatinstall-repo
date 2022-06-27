@@ -1,16 +1,16 @@
 ---
 - name: coping tomcat user xml file into the node
   template: 
-    src: template/tomuser.j2
+    src: templates/tomuser.j2
     dest: /opt/tomcat/conf/tomcat-users.xml
 
 - name: coping tomcat user xml file into the node
   template: 
-    src: template/tomcontext.j2
+    src: templates/tomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: coping tomcat user xml file into the node
   template: 
-    src: template/tomhostcontext.j2
+    src: templates/tomhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
     
