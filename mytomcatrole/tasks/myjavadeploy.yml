@@ -1,6 +1,6 @@
 ---
 - name: deploy java app
   get_url:
-    url: https://cf-templates-rmewraoxk08c-us-west-2.s3.us-west-2.amazonaws.com/project.war
-    dest: /opt/tomcat/webapps/myFirstGame
+    url: http://maha29march22.s3.us-west-2.amazoneaws.com/gameoflife.war
+    dest: /opt/tomcat/webapps/gameoflife.war
     force_basic_auth: yes
