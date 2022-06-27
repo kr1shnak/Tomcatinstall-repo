@@ -3,7 +3,7 @@
   user:
     name: tomcat
     home: /opt/tomcat
-    shell: /bin/bash
+    shell: /bin/false
     state: present
     
     
