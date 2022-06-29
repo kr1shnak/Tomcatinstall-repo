@@ -1,15 +1,15 @@
 ---
 - name: copy tomcat user xml file into the node
   template:
-    src: templtes/tomcatusers.j2
+    src: templates/tomcatusers.j2
     dest: /opt/tomcat/conf/tomcat-users.xml
 
 - name: copy tomcat context xml file into the node
   template:
-    src: templtes/tomcontext.j2
+    src: templates/tomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: copy tomcat host context xml file into the node
   template:
-    src: templtes/tomcathostcontext.j2
+    src: templates/tomcathostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
