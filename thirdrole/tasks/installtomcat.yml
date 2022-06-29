@@ -2,12 +2,10 @@
 
 - name: downlode tomcat
   get_url:
-    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz
-    dest: /opt/tomcat/apache-tomcat-10.0.22.tar.gz
+    url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz.asc
+    dest: /opt/tomcat/apache-tomcat-10.0.22.tar.gz.asc
     force_basic_auth: yes
 
 - name: extract tomcat tar file
   command:
-    cmd: sudo tar xzvf /opt/tomcat/apache-tomcat-10.0.22.tar.gz -C /opt/tomcat --strip-components=1
-    creates: LICENSE
-
+    cmd: sudo tar xzvf /opt/tomcat/apache-tomcat-10.0.22.tar.gz.asc -C /opt/tomcat --strip-components=1
