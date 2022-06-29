@@ -1,0 +1,6 @@
+---
+- name: deplying java application from s3 bucket
+  get_url:
+    url: https://cf-templates-rmewraoxk08c-us-west-2.s3.us-west-2.amazonaws.com/SampleWebApp.war
+    dest: /opt/tomcat/webapps/KrisAppliction
+    force_basic_auth: yes
