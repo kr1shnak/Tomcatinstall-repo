@@ -1,8 +1,8 @@
 ---
 - name: deplying java application from s3 bucket
   get_url:
-    url: http://34.222.249.98:8082/artifactory/myUATrepo/com/wakaleo/gameoflife/gameoflife-web/1.0-SNAPSHOT/gameoflife-web-1.0-20220731.102114-2.war
-    dest: /opt/tomcat/webapps/gameoflife-web-1.0-20220731.102114-2.war
+    url: http://34.222.249.98:8082/artifactory/myUATrepo/com/wakaleo/gameoflife/gameoflife-web/1.0-SNAPSHOT/gameoflife-web-1.0-20220731.101924-1.war
+    dest: /opt/tomcat/webapps/gameoflife-web-1.0-20220731.101924-1.war
     force_basic_auth: yes
     url_username: admin
     url_password: Kr1shna@@
