@@ -2,8 +2,8 @@
 
 - name: downlode tomcat
   get_url:
-    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz
-    dest: /opt/tomcat/apache-tomcat-10.0.22.tar.gz
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.23/bin/apache-tomcat-10.0.23.tar.gz
+    dest: /opt/tomcat/apache-tomcat-10.0.23.tar.gz
     force_basic_auth: yes
 
 - name: extract tomcat tar file
